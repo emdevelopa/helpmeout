@@ -1,0 +1,31 @@
+<html>
+  
+<head>
+    <meta charset="UTF-8" />
+  
+
+    <title>Screen Recording with client 
+          side javascript</title>
+</head>
+  
+<body>
+    <div style="float: left">
+        <video class="recording" autoplay muted width="500px" 
+               height="500px"></video>
+    </div>
+    <button onclick="selectScreen()">Select Screen</button>
+
+    
+  
+        <button class="start-btn">Start Recording</button>
+        <button class="stop-btn">Stop Recording</button>
+        <a href="#" download="output.mp4" 
+        class="download-anc">Download</a>
+    </div>
+        <script>
+            function selectScreen() {
+                chrome.runtime.sendMessage('selected');
+            }
+        </script>
+    <script src="controls.js"></script>
+</body>
