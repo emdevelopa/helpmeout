@@ -12,76 +12,82 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <style>
+    body{
+        background: #90c6c715;
+    }
     .margin-center {
         margin: 0 auto;
     }
 </style>
 
-<body>
-    <header class="flex justify-between px-20 py-10 max-[700px]:px-4">
-        <img src="./images/helplogo.svg" alt="logo" />
-        <nav class="flex w-[60%] items-center justify-between max-[700px]:hidden">
-            <div>
-                <ul class="flex gap-10">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">How it Works</a></li>
-                </ul>
+<body  class="flex flex-col gap-8">
+    <section class="bg-white">
+        <header class="flex justify-between px-20 py-10 max-[700px]:px-4 ">
+            <img src="./images/helplogo.svg" alt="logo" />
+            <nav class="flex w-[60%] items-center justify-between max-[700px]:hidden">
+                <div>
+                    <ul class="flex gap-10">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">How it Works</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#" class="text-[#120B48] font-bold">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="min-[700px]:hidden">
+                <i class="fas fa-bars"></i>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="#" class="text-[#120B48] font-bold">Get Started</a>
-                    </li>
-                </ul>
+        </header>
+        <section class="px-20 flex gap-4 py-10 max-[1195px]:flex-col max-[650px]:px-5">
+            <div class="flex flex-col gap-2 flex-1">
+                <h1 class="text-[64px] font-bold">Show Them Don’t Just Tell</h1>
+                <p class="text-[20px]">
+                    Help your friends and loved ones by creating and sending videos on how
+                    to get things done on a website.
+                </p>
+                <div class="mt-4">
+                    <img src="./images/installBtn.svg" alt="" />
+                </div>
             </div>
-        </nav>
-        <div class="min-[700px]:hidden">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
-    <section class="px-20 flex gap-4 py-10  ">
-        <div class="flex flex-col gap-2">
-            <h1 class="text-[64px] font-bold">Show Them Don’t Just Tell</h1>
-            <p class="text-[20px]">
-                Help your friends and loved ones by creating and sending videos on how
-                to get things done on a website.
-            </p>
-            <div class="mt-4">
-                <img src="./images/installBtn.svg" alt="" />
+            <div class="flex gap-6 flex-2">
+                <div class="flex-col">
+                    <img src="./images/granny.png" alt="" />
+                    <img src="./images/dad&son.png" alt="" />
+                </div>
+                <div>
+                    <img src="./images/womanwithcellphone.png" alt="">
+                </div>
             </div>
-        </div>
-        <div class="flex gap-6">
-            <div class="flex flex-col justify-between"><img src="./images/granny.png" alt="" />
-                <img src="./images/dad&son.png" alt="" />
-            </div>
-            <div>
-                <img src="./images/womanwithcellphone.png" alt="">
-            </div>
-        </div>
+        </section>
     </section>
-    <section class="p-20 ">
+    <section class="p-20 max-[800px]:px-5 bg-white">
         <div class="flex flex-col justify-center items-center">
             <h1 class="font-bold text-[32px]">Features</h1>
             <p>Key Highlights of Our Extension</p>
         </div>
 
-        <div class="flex mt-12 items-center">
+        <div class="flex mt-12 items-center max-[650px]:flex-col">
             <div class="flex flex-col gap-8">
-                <div class="flex gap-6">
+                <div class="flex gap-6 items-start">
                     <img src="./images/featuresIcon.svg" alt="">
                     <div>
                         <h2 class="font-bold text-[#1B233D] text-[28px]">Simple Screen Recording</h2>
                         <p>Effortless screen recording for everyone. Record with ease, no tech expertise required.</p>
                     </div>
                 </div>
-                <div class="flex gap-6">
+                <div class="flex gap-6 items-start">
                     <img src="./images/featuresIcon1.svg" alt="">
                     <div>
                         <h2 class="font-bold text-[#1B233D] text-[28px]">Easy-to-Share URL</h2>
                         <p>Share your recordings instantly with a single link. No attachments, no downloads.</p>
                     </div>
                 </div>
-                <div class="flex gap-6">
+                <div class="flex gap-6 items-start">
                     <img src="./images/featuresIcon2.svg" alt="">
                     <div>
                         <h2 class="font-bold text-[#1B233D] text-[28px]">Revisit Recordings</h2>
@@ -94,63 +100,65 @@
            </div>
         </div>
     </section>
-    <section class="p-20 ">
-        <div class="flex flex-col justify-center items-center">
-            <h1 class="font-bold text-[32px]">How it works</h1>
-        </div>
-
-        <div class="flex mt-12 gap-24 items-center">
-            <div class="flex flex-col items-center gap-4">
-                <img src="./images/Icon1.svg" alt="">
-                <h4 class="font-bold text-[#1B233D] text-[24px]">Record Screen</h4>
-                <p class="text-center">Click the "Start Recording" button in our extension. choose which part of your screen to capture and who you want to send it to.</p>
-                <img src="./images/frame.png" alt="">
+    <section>
+        <section class="p-20 max-[800px]:px-5 bg-white">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="font-bold text-[32px]">How it works</h1>
             </div>
-            <div class="flex flex-col items-center gap-4">
-                <img src="./images/Icon2.svg" alt="">
-                <h4 class="font-bold text-[#1B233D] text-[24px]">Share Your Recording</h4>
-                <p class="text-center">CWe generate a shareable link for your video. Simply send it to your audience via email or copy the link to send via any platform.</p>
-                <img src="./images/frame.png" alt="">
+    
+            <div class="flex mt-12 gap-24 items-center max-[650px]:flex-col">
+                <div class="flex flex-col items-center gap-4">
+                    <img src="./images/Icon1.svg" alt="">
+                    <h4 class="font-bold text-[#1B233D] text-[24px] text-center">Record Screen</h4>
+                    <p class="text-center">Click the "Start Recording" button in our extension. choose which part of your screen to capture and who you want to send it to.</p>
+                    <img src="./images/frame.png" alt="">
+                </div>
+                <div class="flex flex-col items-center gap-4">
+                    <img src="./images/Icon2.svg" alt="">
+                    <h4 class="font-bold text-[#1B233D] text-[24px] text-center">Share Your Recording</h4>
+                    <p class="text-center">CWe generate a shareable link for your video. Simply send it to your audience via email or copy the link to send via any platform.</p>
+                    <img src="./images/frame.png" alt="">
+                </div>
+                <div class="flex flex-col items-center gap-4">
+                    <img src="./images/Icon3.svg" alt="">
+                    <h4 class="font-bold text-[#1B233D] text-[24px] text-center">Learn Effortlessly</h4>
+                    <p class="text-center">Recipients can access your video effortlessly through the provided link, with our user-friendly interface suitable for everyone.</p>
+                    <img src="./images/frame.png" alt="">
+                </div>
             </div>
-            <div class="flex flex-col items-center gap-4">
-                <img src="./images/Icon3.svg" alt="">
-                <h4 class="font-bold text-[#1B233D] text-[24px]">Learn Effortlessly</h4>
-                <p class="text-center">Recipients can access your video effortlessly through the provided link, with our user-friendly interface suitable for everyone.</p>
-                <img src="./images/frame.png" alt="">
+        </section>
+    
+        <footer
+            class="bg-[#120B48] p-20 text-[#fff] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div>
+                <img src="./images/footerlogo.svg" alt="logo" />
             </div>
-        </div>
+            <div class="flex flex-col gap-6">
+                <h6 class="font-bold">Menu</h6>
+                <ul class="flex flex-col gap-6">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Converter</a></li>
+                    <li><a href="#">How it Works</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-6">
+                <h6 class="font-bold">About us</h6>
+                <ul class="flex flex-col gap-6">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-6">
+                <h6 class="font-bold">Screen Record</h6>
+                <ul class="flex flex-col gap-6">
+                    <li><a href="#">Browser Window</a></li>
+                    <li><a href="#">Desktop</a></li>
+                    <li><a href="#">Application</a></li>
+                </ul>
+            </div>
+        </footer>
     </section>
-
-    <footer
-        class="bg-[#120B48] p-20 text-[#fff] grid grid-cols-1 sm:grid-cols-2 mt-20 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <div>
-            <img src="./images/footerlogo.svg" alt="logo" />
-        </div>
-        <div class="flex flex-col gap-6">
-            <h6 class="font-bold">Menu</h6>
-            <ul class="flex flex-col gap-6">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Converter</a></li>
-                <li><a href="#">How it Works</a></li>
-            </ul>
-        </div>
-        <div class="flex flex-col gap-6">
-            <h6 class="font-bold">About us</h6>
-            <ul class="flex flex-col gap-6">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="flex flex-col gap-6">
-            <h6 class="font-bold">Screen Record</h6>
-            <ul class="flex flex-col gap-6">
-                <li><a href="#">Browser Window</a></li>
-                <li><a href="#">Desktop</a></li>
-                <li><a href="#">Application</a></li>
-            </ul>
-        </div>
-    </footer>
 </body>
 
 </html>
